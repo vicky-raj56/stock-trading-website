@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,89 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+.links h5 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.link a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  transform: all 1s ease;
+}
+.col-2 {
+  margin-right: 20px;
+}
+
+.link a:hover {
+  color: #387ed1;
+}
+
+.social-account a {
+  /* display: inline-block; */
+  /* margin-right: 10px; */
+  margin-top: 10px;
+  color: black;
+  opacity: 0.75;
+  font-size: 18px;
+}
+
+.social-account a:hover {
+  color: #387ed1;
+}
+.social-logo a {
+  color: black;
+}
+
+.footer {
+  margin-top: 25px;
+  box-shadow: 0 0 15px #f8f7f762;
+  border-top: 1px solid #e7e6e6;
+}
+.footer-container {
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
+.paragraph {
+  margin-top: 50px;
+}
+.paragraph p {
+  font-size: 0.7rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.paragraph p {
+  color: #9b9b9b;
+  line-height: 1.8;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.footer-down-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-down-link a {
+  font-size: 0.75rem;
+
+  text-align: center;
+  color: #9b9b9b;
+  display: inline-block;
+  unicode-bidi: isolate;
+  margin-bottom: 20px;
+}
+
+.footer-down-link a:hover {
+  color: #387ed1;
 }

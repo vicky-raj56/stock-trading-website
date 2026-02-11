@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import HomePage from "./landing_page/home/HomePage";
 
 function App() {
   return (
-    <div>
-      <h1>hello corder</h1>
+    <div >
+      <HomePage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
