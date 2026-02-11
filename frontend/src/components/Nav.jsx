@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <header
       style={{
         width: "100%",
-        position: "fixed", // Header ko top par fix karne ke liye
+        position: "sticky", // Header ko top par fix karne ke liye
         top: 0,
         left: 0,
         zIndex: "1000",
@@ -14,14 +15,15 @@ function Nav() {
       }}
     >
       {/* Bootstrap Container content ko center aur align rakhta hai */}
-      <div className="container d-flex align-items-center justify-content-between p-3">
-        
+      <div className="container d-flex align-items-center justify-content-between p-3 ">
         <div className="logo" style={{ width: "150px" }}>
+         <Link to={"/"}>
           <img
             style={{ width: "100%" }}
             src="media/images/logo.svg" // Slash sahi karein (/)
             alt="logo"
           />
+         </Link>
         </div>
 
         <nav>
@@ -35,17 +37,51 @@ function Nav() {
               padding: 0,
             }}
           >
-            <li><a href="#" style={{ textDecoration: "none", color: "black" }}>Signup</a></li>
-            <li><a href="#" style={{ textDecoration: "none", color: "black" }}>About</a></li>
-            <li><a href="#" style={{ textDecoration: "none", color: "black" }}>Products</a></li>
-            <li><a href="#" style={{ textDecoration: "none", color: "black" }}>Pricing</a></li>
-            <li><a href="#" style={{ textDecoration: "none", color: "black" }}>Support</a></li>
+            <li>
+              <Link
+                to={"/signup"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Signup
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/about"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/product"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"pricing"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/support"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Support
+              </Link>
+            </li>
             <li>
               <i className="fa-solid fa-bars"></i>
             </li>
           </ul>
         </nav>
-        
       </div>
     </header>
   );

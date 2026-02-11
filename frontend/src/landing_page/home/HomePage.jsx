@@ -11,14 +11,12 @@ import Nav from "../../components/Nav";
 function HomePage() {
   return (
     <>
-      <Nav/>
       <Hero/>
       <Awards/>
       <Stats/>
       <Pricing/>
       <Education/>
       <OpenAccount/>
-      <Footer/>
     </>
   );
 }
