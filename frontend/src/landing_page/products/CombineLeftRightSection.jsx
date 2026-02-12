@@ -60,9 +60,6 @@ function CombineLeftRightSection() {
       <LeftSection leftSection={leftSection[1]} />
       <RightSection rightSection={rightSection[1]} />
       <LeftSection leftSection={leftSection[2]} />
-
-
-
     </div>
   );
 }

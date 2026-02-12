@@ -35,7 +35,6 @@ function Footer() {
                 <i className="fa-brands fa-x-twitter"></i>
               </a>
               <a href="#">
-             
                 <a href="#">
                   <i className="fa-brands fa-square-facebook"></i>
                 </a>
@@ -55,7 +54,6 @@ function Footer() {
                 display: "flex",
                 alignItems: "center",
                 gap: "15px",
-               
               }}
             >
               <a href="#">
