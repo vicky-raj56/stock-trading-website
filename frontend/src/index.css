@@ -168,3 +168,55 @@ body li, a{
 .footer-down-link a:hover {
   color: #387ed1;
 }
+
+.form{
+  height: 80vh;
+  width: 100%;
+  /* background-color: rgb(195, 192, 192); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form form{ 
+  background-color: #dedddd;
+
+  width: 500px;
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid rgb(50, 45, 45); */
+    /* box-shadow: 0px 0px 6px green; */
+    padding: 20px;
+    /* box-shadow: 0px 0px 7px rgba(68, 68, 68, 0.6); */
+   box-shadow: 0px 0px 7px 1px #909091
+
+}
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+
+}
+form div label{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form div input{
+  outline: none;
+  padding: 8px;
+  border-radius: 10px;
+  border: none; 
+  width: 100%;
+}
+
+/* .form form btn {
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: rgb(41, 96, 151);
+
+} */

@@ -1,0 +1,33 @@
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+
+  desboard:
+    build:
+      context: ./desboard
+      dockerfile: Dockerfile
+
+    ports:
+      - "5174:5173"
+
+volumes:
+  mongo_data:
